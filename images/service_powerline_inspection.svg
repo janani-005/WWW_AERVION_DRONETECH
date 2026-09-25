@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="50%" stop-color="#0b172a"/>
+      <stop offset="100%" stop-color="#04070e"/>
+    </linearGradient>
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066ff"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg-grad)"/>
+
+  <!-- High Voltage Transmission Tower Vector -->
+  <g transform="translate(600, 220)">
+    <polygon points="-40,180 40,180 15,-160 -15,-160" fill="none" stroke="#0066ff" stroke-width="2"/>
+    <line x1="-70" y1="-100" x2="70" y2="-100" stroke="#0066ff" stroke-width="2.5"/>
+    <line x1="-90" y1="-30" x2="90" y2="-30" stroke="#0066ff" stroke-width="2.5"/>
+    <!-- Powerlines -->
+    <path d="M-600,-100 Q-300,-80 -70,-100" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.8"/>
+    <path d="M-600,-30 Q-300,-10 -90,-30" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.8"/>
+  </g>
+
+  <!-- Thermal Corona Arc Scan Circle -->
+  <circle cx="340" cy="170" r="30" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,5" filter="url(#glow)"/>
+  <circle cx="340" cy="170" r="5" fill="#22c55e"/>
+
+  <!-- Inspection Drone -->
+  <g transform="translate(240, 140)">
+    <line x1="20" y1="0" x2="100" y2="30" stroke="#22c55e" stroke-width="2" stroke-dasharray="4,4"/>
+    <rect x="-30" y="-12" width="60" height="24" rx="6" fill="url(#brand-grad)"/>
+    <circle cx="0" cy="0" r="6" fill="#050811"/>
+
+    <line x1="-30" y1="-8" x2="-65" y2="-32" stroke="#22c55e" stroke-width="3"/>
+    <line x1="30" y1="-8" x2="65" y2="-32" stroke="#22c55e" stroke-width="3"/>
+    <line x1="-30" y1="8" x2="-65" y2="32" stroke="#0066ff" stroke-width="3"/>
+    <line x1="30" y1="8" x2="65" y2="32" stroke="#0066ff" stroke-width="3"/>
+
+    <ellipse cx="-65" cy="-32" rx="25" ry="5" fill="none" stroke="#22c55e" stroke-width="2"/>
+    <ellipse cx="65" cy="-32" rx="25" ry="5" fill="none" stroke="#22c55e" stroke-width="2"/>
+    <ellipse cx="-65" cy="32" rx="25" ry="5" fill="none" stroke="#0066ff" stroke-width="2"/>
+    <ellipse cx="65" cy="32" rx="25" ry="5" fill="none" stroke="#0066ff" stroke-width="2"/>
+  </g>
+
+  <!-- Telemetry Box -->
+  <rect x="40" y="30" width="260" height="65" rx="6" fill="rgba(5, 8, 17, 0.85)" stroke="#0066ff" stroke-width="1"/>
+  <text x="55" y="52" fill="#22c55e" font-family="monospace" font-size="12" font-weight="bold">POWER LINE & ASSET INSPECTION</text>
+  <text x="55" y="72" fill="#0066ff" font-family="monospace" font-size="11">HIGH-VOLTAGE CORONA DETECTION</text>
+  <text x="55" y="86" fill="#ffffff" font-family="monospace" font-size="10">INFRASTRUCTURE INTEGRITY: OK</text>
+</svg>

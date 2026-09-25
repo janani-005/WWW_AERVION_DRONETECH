@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060b14"/>
+      <stop offset="50%" stop-color="#0c172c"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <linearGradient id="blue-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066ff"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="green-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg-grad)"/>
+  
+  <!-- Grid Lines -->
+  <g stroke="rgba(0, 102, 255, 0.12)" stroke-width="1">
+    <path d="M0 75 L800 75 M0 150 L800 150 M0 225 L800 225 M0 300 L800 300 M0 375 L800 375" />
+    <path d="M100 0 L100 450 M200 0 L200 450 M300 0 L300 450 M400 0 L400 450 M500 0 L500 450 M600 0 L600 450 M700 0 L700 450" />
+  </g>
+  
+  <!-- 3D Contour Topographical Wireframe -->
+  <path d="M 50,380 Q 200,280 400,350 T 750,300" fill="none" stroke="#0066ff" stroke-width="2" opacity="0.6"/>
+  <path d="M 50,340 Q 220,220 420,310 T 750,250" fill="none" stroke="#22c55e" stroke-width="2.5" opacity="0.8"/>
+  <path d="M 80,300 Q 250,180 450,260 T 720,200" fill="none" stroke="#0066ff" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Topo Nodes & GIS Points -->
+  <circle cx="220" cy="220" r="5" fill="#22c55e" filter="url(#glow)"/>
+  <circle cx="420" cy="310" r="5" fill="#0066ff" filter="url(#glow)"/>
+  <circle cx="450" cy="260" r="6" fill="#22c55e" filter="url(#glow)"/>
+  <circle cx="600" cy="220" r="4" fill="#0066ff" filter="url(#glow)"/>
+  
+  <line x1="220" y1="220" x2="450" y2="260" stroke="#22c55e" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="450" y1="260" x2="600" y2="220" stroke="#0066ff" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Drone Vector Graphic -->
+  <g transform="translate(400, 120)">
+    <!-- Scanning Beams -->
+    <polygon points="0,20 -180,220 180,220" fill="url(#green-glow)"/>
+    
+    <!-- Center Body -->
+    <rect x="-35" y="-12" width="70" height="24" rx="8" fill="url(#blue-green)" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="8" fill="#060b14" stroke="#22c55e" stroke-width="2"/>
+    
+    <!-- Drone Arms -->
+    <line x1="-35" y1="-8" x2="-80" y2="-40" stroke="#0066ff" stroke-width="4"/>
+    <line x1="35" y1="-8" x2="80" y2="-40" stroke="#0066ff" stroke-width="4"/>
+    <line x1="-35" y1="8" x2="-80" y2="40" stroke="#0066ff" stroke-width="4"/>
+    <line x1="35" y1="8" x2="80" y2="40" stroke="#0066ff" stroke-width="4"/>
+    
+    <!-- Rotors -->
+    <ellipse cx="-80" cy="-40" rx="35" ry="6" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+    <ellipse cx="80" cy="-40" rx="35" ry="6" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+    <ellipse cx="-80" cy="40" rx="35" ry="6" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+    <ellipse cx="80" cy="40" rx="35" ry="6" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  </g>
+
+  <!-- HUD Telemetry Overlay -->
+  <rect x="40" y="30" width="220" height="60" rx="6" fill="rgba(6, 11, 20, 0.7)" stroke="rgba(34, 197, 94, 0.4)" stroke-width="1"/>
+  <text x="55" y="52" fill="#22c55e" font-family="monospace" font-size="12" font-weight="bold">TOPOGRAPHICAL SURVEY</text>
+  <text x="55" y="72" fill="#0066ff" font-family="monospace" font-size="11">ACCURACY: ±1.2cm | GIS</text>
+
+  <!-- Icon Badge -->
+  <g transform="translate(720, 40)">
+    <circle cx="0" cy="0" r="24" fill="url(#blue-green)"/>
+    <path d="M-10,-5 L0,-15 L10,-5 L0,5 Z M-10,5 L0,15 L10,5 L0,-5 Z" fill="#ffffff"/>
+  </g>
+</svg>

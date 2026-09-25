@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drone Services & Inspection Solutions | Aervion DroneTech</title>
+  <meta name="description"
+    content="Comprehensive drone services: Topographical Survey, GIS Mapping, Solar Plant Thermal Inspection, Wind Turbine Diagnostic, Construction Progress Monitoring, and Precision Agriculture in Salem, India.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .service-block {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .service-block:nth-child(even) {
+      background: var(--bg-secondary);
+    }
+
+    .benefit-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.85rem;
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      border-radius: 4px;
+      font-size: 0.875rem;
+      color: var(--text-primary);
+    }
+
+    .benefit-tag svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--accent-green);
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+
+    .check-item svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--accent-green);
+      flex-shrink: 0;
+    }
+
+    .service-img-preview {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      margin-bottom: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Aervion DroneTech Home">
+        <img src="images/aervion_logo.jpeg" alt="Aervion DroneTech Solutions Official Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">AERVION <span>DRONETECH</span></span>
+          <span class="brand-sub">SOLUTIONS PVT. LTD.</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="about.html#team" class="nav-link">Team</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="industries.html" class="nav-link">Industries</a>
+        <a href="technology.html" class="nav-link">Technology</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="btn btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.9rem;">Get a
+          Quote</a>
+      </nav>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content" style="padding-top: var(--nav-height);">
+
+    <!-- PAGE HERO -->
+    <section class="section-padding"
+      style="background: radial-gradient(circle at 30% 0%, rgba(34, 197, 94, 0.1) 0%, rgba(0, 102, 255, 0.05) 50%, transparent 70%); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="reveal reveal-up" style="max-width: 800px;">
+          <span class="mono-tag">CAPABILITIES &amp; DEPLOYMENTS</span>
+          <h1>Industrial Drone &amp; Inspection Services</h1>
+          <p style="font-size: 1.15rem; margin-top: 1rem; color: var(--text-secondary);">
+            Delivering spatial accuracy, thermographic diagnostic reports, volumetric analytics, and precision aerial
+            spraying for India's core infrastructure, energy, and agri-business assets.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE 1: DRONE SURVEY & MAPPING -->
+    <section id="survey-mapping" class="service-block">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center;"
+          class="split-layout">
+
+          <div class="reveal reveal-left">
+            <span class="mono-tag">PRECISION GEOSPATIAL</span>
+            <h2>Drone Survey &amp; Mapping</h2>
+            <p style="margin-top: 1rem; font-size: 1.05rem;">
+              High-resolution spatial mapping and topographical surveying powered by RTK photogrammetry sensors. We
+              generate engineering-grade GIS layers and orthomosaic basemaps.
+            </p>
+
+            <div class="checklist-grid">
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Topographical Survey</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Land Survey</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>GIS Mapping</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Orthomosaic Mapping</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Contour Mapping</span></div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <a href="contact.html" class="btn btn-primary">Request Survey Quote</a>
+            </div>
+          </div>
+
+          <!-- Image Visual -->
+          <div class="reveal reveal-right">
+            <div class="glass-card" style="padding: 1.5rem;">
+              <div class="realtime-photo-card" style="margin-bottom: 1.25rem;">
+                <div class="realtime-overlay-tag"><span class="pulse-dot"></span> SURVEY TELEMETRY REAL-TIME</div>
+                <img src="images/drone_realtime_survey.jpg" alt="Real Time Drone Survey & Mapping" style="height: 240px;">
+              </div>
+              <h4 style="color: var(--text-primary);">Centimeter-Level Topographical Precision</h4>
+              <p style="font-size: 0.9rem; margin-top: 0.5rem;">Generates CAD-compatible contour maps, DEM models, and
+                high-res orthomosaics for infrastructure engineering.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE 2: SOLAR PLANT INSPECTION -->
+    <section id="solar-inspection" class="service-block">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 4rem; align-items: center;"
+          class="split-layout">
+
+          <div class="reveal reveal-left">
+            <div class="glass-card" style="padding: 1.5rem;">
+              <div class="realtime-photo-card" style="margin-bottom: 1.25rem;">
+                <div class="realtime-overlay-tag"><span class="pulse-dot"></span> SOLAR THERMAL AUDIT REAL-TIME</div>
+                <img src="images/drone_realtime_solar.jpg" alt="Real Time Solar Plant Thermal Inspection" style="height: 240px;">
+              </div>
+              <div
+                style="background: rgba(34, 197, 94, 0.05); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-glow);">
+                <h4 style="color: var(--accent-green); margin-bottom: 0.5rem; font-size: 0.95rem;">Key Thermal Audit
+                  Outputs:</h4>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                  <span class="benefit-tag">Faster Inspection</span>
+                  <span class="benefit-tag">Zero Plant Downtime</span>
+                  <span class="benefit-tag">Hotspot Detection</span>
+                  <span class="benefit-tag">Improved Efficiency</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal reveal-right">
+            <span class="mono-tag">RENEWABLE ENERGY</span>
+            <h2>Solar Plant Thermal Inspection</h2>
+            <p style="margin-top: 1rem; font-size: 1.05rem;">
+              We deploy radiometric thermal cameras to inspect utility-scale solar farms and rooftop solar plants,
+              isolating defective PV modules before catastrophic string loss.
+            </p>
+
+            <div class="checklist-grid">
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Hotspot Identification</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Damaged Module Isolation</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Dirt Accumulation Audit</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Performance Issue Analysis</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Thermal Defect Reports</span></div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <a href="contact.html" class="btn btn-primary">Schedule Thermal Inspection</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE 3: WIND TURBINE INSPECTION -->
+    <section id="wind-turbine" class="service-block">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center;"
+          class="split-layout">
+
+          <div class="reveal reveal-left">
+            <span class="mono-tag">WIND ENERGY ASSETS</span>
+            <h2>Wind Turbine Blade Inspection</h2>
+            <p style="margin-top: 1rem; font-size: 1.05rem;">
+              Autonomous 4K RGB optical inspections of wind turbine rotor blades, detecting surface erosion,
+              micro-cracks, and lightning strikes with zero rope access required.
+            </p>
+
+            <div class="checklist-grid">
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Blade Crack Detection</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Surface Erosion Mapping</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Lightning Damage Audit</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Structural Defect Analysis</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Zero Rope Access Risk</span></div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <a href="contact.html" class="btn btn-primary">Book Turbine Inspection</a>
+            </div>
+          </div>
+
+          <div class="reveal reveal-right">
+            <div class="glass-card" style="padding: 1.5rem;">
+              <div class="realtime-photo-card" style="margin-bottom: 1.25rem;">
+                <div class="realtime-overlay-tag"><span class="pulse-dot"></span> WIND TURBINE FLIGHT REAL-TIME</div>
+                <img src="images/drone_realtime_wind.jpg" alt="Real Time Wind Turbine Blade Inspection" style="height: 240px;">
+              </div>
+              <h4 style="color: var(--text-primary);">Non-Destructive Aerial Blade Audit</h4>
+              <p style="font-size: 0.9rem; margin-top: 0.5rem;">Saves maintenance crew hazard risks while capturing
+                sub-millimeter surface blade defects.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE 4: CONSTRUCTION MONITORING -->
+    <section id="construction-monitoring" class="service-block">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 4rem; align-items: center;"
+          class="split-layout">
+
+          <div class="reveal reveal-left">
+            <div class="glass-card" style="padding: 1.5rem;">
+              <div class="realtime-photo-card" style="margin-bottom: 1.25rem;">
+                <div class="realtime-overlay-tag"><span class="pulse-dot"></span> CONSTRUCTION MONITORING REAL-TIME</div>
+                <img src="images/drone_realtime_construction.jpg" alt="Real Time Construction Monitoring" style="height: 240px;">
+              </div>
+              <h4 style="color: var(--text-primary);">Earthwork &amp; Site Volumetric Analytics</h4>
+              <p style="font-size: 0.9rem; margin-top: 0.5rem;">Cut/fill volume calculations and automated progress
+                tracking for EPC infrastructure contractors.</p>
+            </div>
+          </div>
+
+          <div class="reveal reveal-right">
+            <span class="mono-tag">INFRASTRUCTURE &amp; EPC</span>
+            <h2>Construction Progress Monitoring</h2>
+            <p style="margin-top: 1rem; font-size: 1.05rem;">
+              Keep stakeholders updated with high-resolution aerial timelines, stockpile volume measurements, and
+              infrastructure integrity checks across highways, bridges, and industrial sites.
+            </p>
+
+            <div class="checklist-grid">
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Project Progress Tracking</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Site 3D Documentation</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Cut &amp; Fill Volume Calculations</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Earthwork Analysis</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Bridge &amp; Highway Inspections</span></div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <a href="contact.html" class="btn btn-primary">Setup Site Monitoring</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE 5: AGRICULTURAL DRONE SOLUTIONS -->
+    <section id="agriculture" class="service-block">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center;"
+          class="split-layout">
+
+          <div class="reveal reveal-left">
+            <span class="mono-tag">SMART FARMING</span>
+            <h2>Agricultural Drone Solutions</h2>
+            <p style="margin-top: 1rem; font-size: 1.05rem;">
+              Precision agriculture powered by multispectral NDVI sensors. Optimize crop yields, evaluate irrigation
+              stress, and deploy targeted agricultural spraying support.
+            </p>
+
+            <div class="checklist-grid">
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Crop Health Monitoring (NDVI)</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Farmland Boundary Mapping</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Yield Estimation Assessment</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Irrigation Stress Analysis</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Agricultural Spraying Support</span></div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <a href="contact.html" class="btn btn-primary">Book Agri Drone Service</a>
+            </div>
+          </div>
+
+          <div class="reveal reveal-right">
+            <div class="glass-card" style="padding: 1.5rem;">
+              <div class="realtime-photo-card" style="margin-bottom: 1.25rem;">
+                <div class="realtime-overlay-tag"><span class="pulse-dot"></span> AGRI CROP SPRAYING REAL-TIME</div>
+                <img src="images/drone_realtime_agriculture.jpg" alt="Real Time Precision Agricultural Drone" style="height: 240px;">
+              </div>
+              <h4 style="color: var(--text-primary);">Multispectral Crop Health Analytics</h4>
+              <p style="font-size: 0.9rem; margin-top: 0.5rem;">Identifies pest damage, nutrient deficiency, and
+                irrigation anomalies days before visual signs appear.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE 6: UAV R&D & POWERLINE INSPECTIONS -->
+    <section id="uav-rd" class="service-block">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 4rem; align-items: center;"
+          class="split-layout">
+
+          <div class="reveal reveal-left">
+            <div class="glass-card" style="padding: 1.5rem;">
+              <div class="realtime-photo-card" style="margin-bottom: 1.25rem;">
+                <div class="realtime-overlay-tag"><span class="pulse-dot"></span> SUBSTATION & POWERLINE REAL-TIME</div>
+                <img src="images/drone_realtime_substation.jpg" alt="Real Time Substation & Powerline Inspection" style="height: 240px;">
+              </div>
+              <h4 style="color: var(--text-primary);">Custom Payload Integration &amp; Flight Code</h4>
+              <p style="font-size: 0.9rem; margin-top: 0.5rem;">R&amp;D team dedicated to custom drone frame design,
+                sensor integration, and specialized flight missions.</p>
+            </div>
+          </div>
+
+          <div class="reveal reveal-right">
+            <span class="mono-tag">ADVANCED RESEARCH</span>
+            <h2>UAV Research &amp; Custom R&amp;D</h2>
+            <p style="margin-top: 1rem; font-size: 1.05rem;">
+              Custom drone payload development, hardware design, thermal camera retrofitting, and specialized flight
+              software for unique industrial requirements across India.
+            </p>
+
+            <div class="checklist-grid">
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Custom Drone Payload Design</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Sensor &amp; Camera Integration</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Specialized Mission Flight Plans</span></div>
+              <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>High Voltage Corona Audits</span></div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <a href="contact.html" class="btn btn-primary">Discuss R&amp;D Requirements</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="images/aervion_logo.jpeg" alt="Aervion Logo" class="brand-logo-img">
+            <div class="brand-text">
+              <span class="brand-title">AERVION <span>DRONETECH</span></span>
+              <span class="brand-sub">SOLUTIONS PVT. LTD.</span>
+            </div>
+          </a>
+          <p>"Transforming Industries Through Advanced Drone Technology." Premier provider of commercial UAV inspection,
+            mapping, and monitoring.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="industries.html">Industries</a>
+            <a href="technology.html">Technology &amp; R&amp;D</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Our Services</h4>
+          <div class="footer-links">
+            <a href="services.html#survey-mapping">Drone Survey &amp; Mapping</a>
+            <a href="services.html#solar-inspection">Solar Plant Inspection</a>
+            <a href="services.html#wind-turbine">Wind Turbine Inspection</a>
+            <a href="services.html#construction-monitoring">Construction Monitoring</a>
+            <a href="services.html#agriculture">Agricultural Drone Services</a>
+            <a href="services.html#uav-rd">UAV Research &amp; Development</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <div class="footer-contact-info">
+            <div class="item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <div>+91 63824 14918 / +91 77088 86918</div>
+            </div>
+            <div class="item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <div>Info@aerviondronetechsolutions.in</div>
+            </div>
+            <div class="item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <div>Salem, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Aervion DroneTech Solutions Pvt. Ltd. All rights reserved.</div>
+        <div class="back-to-top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+
+</html>

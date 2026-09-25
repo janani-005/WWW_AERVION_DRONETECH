@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries We Serve | Aervion DroneTech Solutions</title>
+  <meta name="description"
+    content="Discover how Aervion DroneTech Solutions serves Energy & Utilities, Construction, Agriculture, Manufacturing, and Government sectors across India.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .subcat-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .subcat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.6rem 1rem;
+      background: var(--bg-glass-card);
+      backdrop-filter: blur(8px);
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      font-size: 0.95rem;
+      color: var(--text-primary);
+    }
+
+    .subcat-item svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--accent-green);
+    }
+
+    .industry-header-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--border-color);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Aervion DroneTech Home">
+        <img src="images/aervion_logo.jpeg" alt="Aervion DroneTech Solutions Official Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">AERVION <span>DRONETECH</span></span>
+          <span class="brand-sub">SOLUTIONS PVT. LTD.</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="about.html#team" class="nav-link">Team</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="industries.html" class="nav-link active">Industries</a>
+        <a href="technology.html" class="nav-link">Technology</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="btn btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.9rem;">Get a
+          Quote</a>
+      </nav>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content" style="padding-top: var(--nav-height);">
+
+    <!-- HERO BANNER -->
+    <section class="section-padding"
+      style="background: radial-gradient(circle at 70% 0%, rgba(34, 197, 94, 0.1) 0%, rgba(0, 102, 255, 0.05) 50%, transparent 70%); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="reveal reveal-up" style="max-width: 800px;">
+          <span class="mono-tag">SECTOR SPECIALIZATION</span>
+          <h1>Industries We Serve</h1>
+          <p style="font-size: 1.15rem; margin-top: 1rem; color: var(--text-secondary);">
+            Tailored UAV operations, photogrammetry, thermal diagnostics, and aerial asset inspection designed
+            specifically for enterprise and government clients across Salem &amp; India.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES GRID -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="industries-grid"
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+
+          <!-- Industry 1: Energy & Utilities -->
+          <div id="energy" class="industry-card reveal reveal-up delay-1">
+            <div class="tech-corner tl"></div>
+            <div class="tech-corner tr"></div>
+            <div class="industry-card-img-container">
+              <div class="realtime-overlay-tag"><span class="pulse-dot"></span> ENERGY SECTOR REAL-TIME</div>
+              <img src="images/drone_realtime_solar_hill.jpg" alt="Real Time Solar & Wind Energy Drone Inspection">
+            </div>
+
+            <h3>Energy &amp; Utilities</h3>
+            <p style="font-size: 0.95rem; margin-top: 0.5rem; color: var(--text-secondary);">
+              Preventative maintenance, thermal flaw detection, and corridor inspections for renewable power producers.
+            </p>
+
+            <div class="subcat-list">
+              <div class="subcat-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Solar Power Plants (Utility &amp; Rooftop)</span></div>
+              <div class="subcat-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Wind Farms (Rotor Blade Inspection)</span></div>
+              <div class="subcat-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Electrical Power Transmission Lines</span></div>
+            </div>
+
+            <div style="margin-top: 1.75rem;">
+              <a href="contact.html" class="btn btn-outline-green" style="width: 100%;">Consult Energy Team</a>
+            </div>
+          </div>
+
+          <!-- Industry 2: Construction -->
+          <div id="construction" class="industry-card reveal reveal-up delay-2">
+            <div class="tech-corner tl"></div>
+            <div class="tech-corner tr"></div>
+            <div class="industry-card-img-container">
+              <div class="realtime-overlay-tag"><span class="pulse-dot"></span> INFRASTRUCTURE REAL-TIME</div>
+              <img src="images/drone_realtime_construction.jpg" alt="Real Time Highway & Bridge Construction Monitoring">
+            </div>
+
+            <h3>Construction &amp; Infrastructure</h3>
+            <p style="font-size: 0.95rem; margin-top: 0.5rem; color: var(--text-secondary);">
+              Real-time site documentation, volume calculations, and 3D mesh modeling for builders and EPC contractors.
+            </p>
+
+            <div class="subcat-list">
+              <div class="subcat-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Building Construction Developers</span></div>
+              <div class="subcat-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Infrastructure Developers (Roads &amp; Bridges)</span></div>
+              <div class="subcat-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>EPC Contractors &amp; Surveyors</span></div>
+            </div>
+
+            <div style="margin-top: 1.75rem;">
+              <a href="contact.html" class="btn btn-outline-green" style="width: 100%;">Consult Construction Team</a>
+            </div>
+          </div>
+
+          <!-- Industry 3: Agriculture -->
+          <div id="agriculture" class="industry-card reveal reveal-up delay-3">
+            <div class="tech-corner tl"></div>
+            <div class="tech-corner tr"></div>
+            <div class="industry-card-img-container">
+              <div class="realtime-overlay-tag"><span class="pulse-dot"></span> AGRI FLEET REAL-TIME</div>
+              <img src="images/drone_realtime_agriculture.jpg" alt="Real Time Precision Agriculture Crop Spraying">
+            </div>
+
+            <h3>Precision Agriculture</h3>
+            <p style="font-size: 0.95rem; margin-top: 0.5rem; color: var(--text-secondary);">
+              Multispectral crop health assessments (NDVI) and targeted liquid spraying for maximized farm yield.
+            </p>
+
+            <div class="subcat-list">
+              <div class="subcat-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Commercial Farms &amp; Plantations</span></div>
+              <div class="subcat-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Agri-Businesses &amp; Seed Producers</span></div>
+              <div class="subcat-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Agricultural Service Providers</span></div>
+            </div>
+
+            <div style="margin-top: 1.75rem;">
+              <a href="contact.html" class="btn btn-outline-green" style="width: 100%;">Consult Agri Team</a>
+            </div>
+          </div>
+
+          <!-- Industry 4: Industrial & Government -->
+          <div id="industrial" class="industry-card reveal reveal-up delay-4">
+            <div class="tech-corner tl"></div>
+            <div class="tech-corner tr"></div>
+            <div class="industry-card-img-container">
+              <div class="realtime-overlay-tag"><span class="pulse-dot"></span> INDUSTRIAL ASSETS REAL-TIME</div>
+              <img src="images/drone_realtime_industrial.jpg" alt="Real Time Industrial Refinery & Smart City Drone Inspection">
+            </div>
+
+            <h3>Industrial &amp; Smart Cities</h3>
+            <p style="font-size: 0.95rem; margin-top: 0.5rem; color: var(--text-secondary);">
+              Asset integrity audits, warehouse structural monitoring, and public sector urban planning mapping.
+            </p>
+
+            <div class="subcat-list">
+              <div class="subcat-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Manufacturing &amp; Industrial Facilities</span></div>
+              <div class="subcat-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Warehouses &amp; Logistics Hubs</span></div>
+              <div class="subcat-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Smart City &amp; Municipal Infrastructure</span></div>
+            </div>
+
+            <div style="margin-top: 1.75rem;">
+              <a href="contact.html" class="btn btn-outline-green" style="width: 100%;">Consult Public Sector Team</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="section-padding"
+      style="background: linear-gradient(135deg, rgba(0, 102, 255, 0.12) 0%, rgba(34, 197, 94, 0.12) 100%); border-t: 1px solid var(--border-glow);">
+      <div class="container" style="text-align: center;">
+        <span class="mono-tag">CUSTOM ENTERPRISE PACKAGES</span>
+        <h2 style="margin-bottom: 1rem;">Need Specialized Sector Deployments?</h2>
+        <p style="max-width: 600px; margin: 0 auto 2rem auto;">Our flight crew and data analytics team customize drone
+          operations to meet your exact industry compliance standards.</p>
+        <a href="contact.html" class="btn btn-primary">Schedule Sector Consultation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="images/aervion_logo.jpeg" alt="Aervion Logo" class="brand-logo-img">
+            <div class="brand-text">
+              <span class="brand-title">AERVION <span>DRONETECH</span></span>
+              <span class="brand-sub">SOLUTIONS PVT. LTD.</span>
+            </div>
+          </a>
+          <p>"Transforming Industries Through Advanced Drone Technology." Premier provider of commercial UAV inspection,
+            mapping, and monitoring.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="industries.html">Industries</a>
+            <a href="technology.html">Technology &amp; R&amp;D</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Our Services</h4>
+          <div class="footer-links">
+            <a href="services.html#survey-mapping">Drone Survey &amp; Mapping</a>
+            <a href="services.html#solar-inspection">Solar Plant Inspection</a>
+            <a href="services.html#wind-turbine">Wind Turbine Inspection</a>
+            <a href="services.html#construction-monitoring">Construction Monitoring</a>
+            <a href="services.html#agriculture">Agricultural Drone Services</a>
+            <a href="services.html#uav-rd">UAV Research &amp; Development</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <div class="footer-contact-info">
+            <div class="item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <div>+91 63824 14918 / +91 77088 86918</div>
+            </div>
+            <div class="item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <div>Info@aerviondronetechsolutions.in</div>
+            </div>
+            <div class="item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <div>Salem, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Aervion DroneTech Solutions Pvt. Ltd. All rights reserved.</div>
+        <div class="back-to-top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+
+</html>
