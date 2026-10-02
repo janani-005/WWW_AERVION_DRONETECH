@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aervion DroneTech - Contact & Quote Request Form</title>
+  <style>
+    :root {
+      --primary: #16a34a;
+      --primary-hover: #15803d;
+      --bg-card: #ffffff;
+      --text-dark: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --error-color: #ef4444;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: #f8fafc;
+      color: var(--text-dark);
+      padding: 2rem 1rem;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.5rem;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-header {
+      margin-bottom: 2rem;
+    }
+
+    .form-header h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.75rem;
+      color: var(--text-dark);
+    }
+
+    .form-header p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+    }
+
+    .form-group.error input,
+    .form-group.error select,
+    .form-group.error textarea {
+      border-color: var(--error-color);
+    }
+
+    .error-msg {
+      color: var(--error-color);
+      font-size: 0.8rem;
+      margin-top: 0.35rem;
+      display: none;
+    }
+
+    .form-group.error .error-msg {
+      display: block;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    @media (max-width: 580px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    .btn-submit {
+      background-color: var(--primary);
+      color: #ffffff;
+      border: none;
+      padding: 0.85rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .btn-submit:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+
+    .alert-box {
+      padding: 0.875rem 1rem;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+      display: none;
+      font-size: 0.9rem;
+    }
+
+    .alert-box.success {
+      background-color: #dcfce7;
+      border: 1px solid #86efac;
+      color: #166534;
+    }
+
+    .alert-box.error {
+      background-color: #fee2e2;
+      border: 1px solid #fca5a5;
+      color: #991b1b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <div class="form-header">
+      <h2>Request a Drone Service Quote</h2>
+      <p>Submit your commercial UAV inspection or survey requirements below.</p>
+    </div>
+
+    <!-- Alert Banner Container -->
+    <div id="alertBox" class="alert-box"></div>
+
+    <form id="contactForm" action="http://localhost:8080/api/contact" method="POST" novalidate>
+      <div class="form-group" id="group-fullName">
+        <label for="fullName">Full Name / Organization *</label>
+        <input type="text" id="fullName" name="fullName" placeholder="e.g. Anbarasan / ABC Infra" required>
+        <span class="error-msg">Full Name is required (minimum 2 characters).</span>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group" id="group-email">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="name@company.com" required>
+          <span class="error-msg">Valid email address required.</span>
+        </div>
+
+        <div class="form-group" id="group-phone">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+          <span class="error-msg">Valid phone number required.</span>
+        </div>
+      </div>
+
+      <div class="form-group" id="group-serviceType">
+        <label for="serviceType">Service Required *</label>
+        <select id="serviceType" name="serviceType" required>
+          <option value="" disabled selected>-- Select Drone Service --</option>
+          <option value="Survey & Mapping">Drone Survey &amp; Topographical Mapping</option>
+          <option value="Solar Inspection">Solar Plant Thermal Inspection</option>
+          <option value="Wind Turbine Inspection">Wind Turbine Blade Inspection</option>
+          <option value="Construction Monitoring">Construction Progress Monitoring</option>
+          <option value="Agriculture Services">Agricultural Drone Services (NDVI &amp; Spraying)</option>
+          <option value="UAV R&D">Custom UAV Research &amp; Development</option>
+          <option value="General Inquiry">General Commercial Inquiry</option>
+        </select>
+        <span class="error-msg">Please select a service category.</span>
+      </div>
+
+      <div class="form-group" id="group-message">
+        <label for="message">Project Overview &amp; Location *</label>
+        <textarea id="message" name="message" rows="4" placeholder="Describe site location, acreage, timeline..." required></textarea>
+        <span class="error-msg">Please provide project details (minimum 10 characters).</span>
+      </div>
+
+      <button type="submit" class="btn-submit" id="submitBtn">
+        Submit Quote Request
+      </button>
+    </form>
+  </div>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>
