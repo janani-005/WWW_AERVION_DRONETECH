@@ -1,0 +1,8 @@
+# Files in the repo that should NOT be published on the website
+.git
+.assetsignore
+wrangler.jsonc
+README.md
+AERVION PROFILE.docx
+extracted_profile.txt
+google-apps-script

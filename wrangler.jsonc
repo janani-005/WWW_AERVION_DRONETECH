@@ -1,0 +1,9 @@
+// Cloudflare Workers config - serves this folder as a static website.
+// Files listed in .assetsignore are not published.
+{
+  "name": "www-aervion-dronetech",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "."
+  }
+}
