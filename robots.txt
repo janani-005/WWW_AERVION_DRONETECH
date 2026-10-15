@@ -1,0 +1,11 @@
+# Robots.txt for Aervion DroneTech Solutions Pvt. Ltd.
+# Website: https://aerviondronetechsolutions.in/
+
+User-agent: *
+Allow: /
+
+# Disallow non-public development / script folders
+Disallow: /google-apps-script/
+
+# Sitemaps
+Sitemap: https://aerviondronetechsolutions.in/sitemap.xml
