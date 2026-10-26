@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://aerviondronetechsolutions.in/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://aerviondronetechsolutions.in/images/aervion_logo.jpeg</image:loc>
+      <image:title>Aervion DroneTech Solutions Pvt. Ltd. Official Logo</image:title>
+      <image:caption>Aervion DroneTech Solutions Corporate Logo - Advanced Drone Services and Aerial Intelligence</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aerviondronetechsolutions.in/images/drone_realtime_hero.jpg</image:loc>
+      <image:title>DGCA Compliant Drone Flight Operations in India</image:title>
+      <image:caption>Live commercial drone operations by Aervion DroneTech Solutions</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://aerviondronetechsolutions.in/services.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://aerviondronetechsolutions.in/images/drone_realtime_survey.jpg</image:loc>
+      <image:title>Drone Survey and Topographical GIS Mapping Services</image:title>
+      <image:caption>Centimeter-level drone survey and orthomosaic mapping by Aervion DroneTech Solutions</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aerviondronetechsolutions.in/images/drone_realtime_solar.jpg</image:loc>
+      <image:title>Solar Plant Thermal Drone Inspection</image:title>
+      <image:caption>Aerial radiometric thermal inspection identifying solar PV panel hotspots</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aerviondronetechsolutions.in/images/drone_realtime_wind.jpg</image:loc>
+      <image:title>Wind Turbine Blade Drone Inspection</image:title>
+      <image:caption>High-resolution drone inspection of wind turbine rotor blades with zero rope access risk</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aerviondronetechsolutions.in/images/drone_realtime_construction.jpg</image:loc>
+      <image:title>Construction Progress Monitoring and Volumetric Earthwork Analysis</image:title>
+      <image:caption>Aerial site progress monitoring and cut-and-fill volume tracking for EPC contractors</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aerviondronetechsolutions.in/images/drone_realtime_agriculture.jpg</image:loc>
+      <image:title>Agricultural Drone Solutions and NDVI Crop Health Monitoring</image:title>
+      <image:caption>Precision agriculture drone surveys and crop spraying support</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aerviondronetechsolutions.in/images/drone_realtime_substation.jpg</image:loc>
+      <image:title>UAV Research and High-Voltage Powerline Inspection</image:title>
+      <image:caption>Power transmission corridor and electrical substation UAV thermal inspection</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Us Page -->
+  <url>
+    <loc>https://aerviondronetechsolutions.in/about.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Industries Page -->
+  <url>
+    <loc>https://aerviondronetechsolutions.in/industries.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://aerviondronetechsolutions.in/images/drone_realtime_solar_hill.jpg</image:loc>
+      <image:title>Renewable Energy Solar and Wind Drone Inspection</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aerviondronetechsolutions.in/images/drone_realtime_industrial.jpg</image:loc>
+      <image:title>Industrial Plant and Smart City Drone Inspection</image:title>
+    </image:image>
+  </url>
+
+  <!-- Technology & Capabilities Page -->
+  <url>
+    <loc>https://aerviondronetechsolutions.in/technology.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://aerviondronetechsolutions.in/images/drone_realtime_photogrammetry.jpg</image:loc>
+      <image:title>Photogrammetry and GIS Elevation Data Processing</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aerviondronetechsolutions.in/images/drone_realtime_lidar_3d.jpg</image:loc>
+      <image:title>LiDAR 3D Terrain Scanning and Drone R&amp;D</image:title>
+    </image:image>
+  </url>
+
+  <!-- Contact Us Page -->
+  <url>
+    <loc>https://aerviondronetechsolutions.in/contact.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+</urlset>
